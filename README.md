@@ -1,7 +1,20 @@
 > [!NOTE]
 > 当前该笔记项目正在寻找共建者！（有意者与我联系 seeridia@gmail.com ）
 
-![Anyayay's Chemistry Note](./public/images/Logo.png)
+<p align="center">
+  <img src="./public/images/Logo.png" alt="Anyayay's Chemistry Note" width="480" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/yulaoshizuikeai/Chemistry-Note/actions/workflows/check.yml"><img src="https://img.shields.io/github/actions/workflow/status/yulaoshizuikeai/Chemistry-Note/check.yml?branch=master&style=flat-square&logo=github-actions&logoColor=white&label=CI%20Check" alt="CI Status" /></a>
+  <a href="https://vitepress.dev"><img src="https://img.shields.io/badge/VitePress-2.0-blue?style=flat-square&logo=vitepress&logoColor=white" alt="VitePress" /></a>
+  <a href="https://bun.sh"><img src="https://img.shields.io/badge/Bun-%E2%89%A51.3-fbf0df?style=flat-square&logo=bun&logoColor=black" alt="Bun" /></a>
+  <a href="https://Chemistry-Note.seeridia.top"><img src="https://img.shields.io/badge/Online%20Site-Live-success?style=flat-square&logo=google-chrome&logoColor=white" alt="Live Site" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/yulaoshizuikeai/Chemistry-Note/stargazers"><img src="https://img.shields.io/github/stars/yulaoshizuikeai/Chemistry-Note?style=flat-square&logo=github" alt="Stars" /></a>
+  <a href="https://github.com/yulaoshizuikeai/Chemistry-Note/network/members"><img src="https://img.shields.io/github/forks/yulaoshizuikeai/Chemistry-Note?style=flat-square&logo=github" alt="Forks" /></a>
+  <a href="https://github.com/yulaoshizuikeai/Chemistry-Note/graphs/contributors"><img src="https://img.shields.io/github/contributors/yulaoshizuikeai/Chemistry-Note?style=flat-square&logo=github" alt="Contributors" /></a>
+</p>
 
 1. 在线阅读: [https://Chemistry-Note.seeridia.top](https://Chemistry-Note.seeridia.top)
 2. 下载 PDF: [https://umami.seeridia.top/q/e8e52FUHV](https://umami.seeridia.top/q/e8e52FUHV)
@@ -22,7 +35,7 @@
 - 02 微粒间作用力与物质性质
   - 01 [晶体与晶胞](02%20微粒间作用力与物质性质/01%20晶体与晶胞（基础知识）.md)
   - 02 [分子间作用力 分子晶体](02%20微粒间作用力与物质性质/02%20分子间作用力%20分子晶体.md)
-  - 03 [共价键 共价晶体](02%20微粒间作用力与物质性质/04%20金属键%20金属晶体.md)
+  - 03 [共价键 共价晶体](02%20微粒间作用力与物质性质/03%20共价键%20共价晶体.md)
   - 04 [金属键 金属晶体](02%20微粒间作用力与物质性质/04%20金属键%20金属晶体.md)
   - 05 [离子键 离子晶体](02%20微粒间作用力与物质性质/05%20离子键%20离子晶体.md)
   - 考点 [化学键与相互作用力](/02%20%E5%BE%AE%E7%B2%92%E9%97%B4%E4%BD%9C%E7%94%A8%E5%8A%9B%E4%B8%8E%E7%89%A9%E8%B4%A8%E6%80%A7%E8%B4%A8/%E8%80%83%E7%82%B9%20%E5%8C%96%E5%AD%A6%E9%94%AE%E4%B8%8E%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E5%8A%9B.md)
@@ -77,8 +90,10 @@
   - 05 [电解池](/08%20化学反应能量与速率/05%20电解池.md)
   - 06 [化学反应速率与限度](/08%20化学反应能量与速率/06%20化学反应速率与限度.md)
   - 07 [化学反应速率进阶](/08%20化学反应能量与速率/07%20化学反应速率进阶.md)
-- 09 化学平衡(未完成)
-  - 01 [化学平衡状态](/09%20化学平衡/01%20化学平衡状态.md)
+- 09 化学平衡
+  - 01 [化学平衡状态](09%20化学平衡/01%20化学平衡状态.md)
+  - 02 [化学平衡常数](09%20化学平衡/02%20化学平衡常数.md)
+  - 03 [水溶液中的离子反应](09%20化学平衡/03%20水溶液中的离子反应.md)
 
 ## ❔说明
 

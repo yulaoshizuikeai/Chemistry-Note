@@ -1,0 +1,41 @@
+name: 📝 笔记内容纠错 / 修正反馈
+description: 提交化学笔记中的文字错别字、化学方程式、概念或解析错误
+title: "fix(content): "
+labels: ["content", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你帮助我们完善 **Chemistry Note**！请尽可能详细地指出错误位置与正确参考。
+  - type: input
+    id: chapter
+    attributes:
+      label: 涉及章节或文章路径
+      description: 例如：`01 原子结构与元素性质/03 电子排布式与轨道表示式.md`
+      placeholder: 请输入章节名称或文件名
+    validations:
+      required: true
+  - type: textarea
+    id: current-content
+    attributes:
+      label: 当前错误内容
+      description: 请引用或粘贴笔记中当前有误的描述/公式
+      placeholder: 例如：第 X 段中...
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: 建议修改内容
+      description: 请给出你认为正确的修改建议或化学方程式
+      placeholder: 建议修改为...
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: 参考依据（教材 / 权威资料）
+      description: 例如：人教版选择性必修1 P25，或高考真题解析
+      placeholder: 填写参考资料有助于更快核实合并
+    validations:
+      required: false
