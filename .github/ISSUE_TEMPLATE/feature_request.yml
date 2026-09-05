@@ -1,0 +1,24 @@
+name: 💡 需求 / 章节补充建议
+description: 为 Chemistry Note 提出新章节、功能或考点专题建议
+title: "feat(suggest): "
+labels: ["enhancement", "discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提出对于 Chemistry Note 的改进想法！
+  - type: textarea
+    id: idea-description
+    attributes:
+      label: 你的建议 / 需求描述
+      description: 描述你希望新增的章节、功能组件或考点梳理
+      placeholder: 请简述具体设想与背景
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: 预期效果与价值
+      description: 这将如何帮助化学学习者或高考复习？
+    validations:
+      required: false
