@@ -37,12 +37,12 @@ img {
 /* 页面切换时正文上滑动画 */
 .vp-doc > div,
 .VPHome {
-  animation: page-slide-up 0.3s ease-out;
+  animation: page-slide-up 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes page-slide-up {
   from {
-    transform: translateY(10px);
+    transform: translateY(8px);
     opacity: 0;
   }
 

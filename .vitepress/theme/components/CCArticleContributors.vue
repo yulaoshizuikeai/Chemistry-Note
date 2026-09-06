@@ -128,12 +128,12 @@ watch(pagePath, loadContributors);
   margin-top: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--vp-c-divider);
-  animation: fade-slide-up 0.3s ease-out;
+  animation: fade-slide-up 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes fade-slide-up {
   from {
-    transform: translateY(10px);
+    transform: translateY(8px);
     opacity: 0;
   }
 

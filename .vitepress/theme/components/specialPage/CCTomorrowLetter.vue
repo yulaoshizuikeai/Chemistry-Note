@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CCWaline } from "../waline";
+import { CCPageviews, CCWaline } from "../waline";
 </script>
 
 <template>
@@ -9,7 +9,12 @@ import { CCWaline } from "../waline";
     </article>
 
     <section class="tomorrow-comments" aria-labelledby="tomorrow-comments-title">
-      <h2 id="tomorrow-comments-title" class="tomorrow-comments-title">留言区</h2>
+      <div class="tomorrow-comments-header">
+        <h2 id="tomorrow-comments-title" class="tomorrow-comments-title">留言区</h2>
+        <ClientOnly>
+          <CCPageviews class="tomorrow-pageviews" />
+        </ClientOnly>
+      </div>
       <ClientOnly>
         <CCWaline
           placeholder="想对自己说点什么，就留在这里吧。不管你是即将站上考场的自己想对自己说的话，又或是对明年高考的自己的一点期望，就偷偷放在这边吧"
@@ -22,6 +27,7 @@ import { CCWaline } from "../waline";
 <style scoped>
 .tomorrow-page {
   --tomorrow-serif: "Songti SC", "Noto Serif CJK SC", "Noto Serif SC", STSong, serif;
+  --tomorrow-ease: cubic-bezier(0.16, 1, 0.3, 1);
 
   min-height: calc(100vh - var(--vp-nav-height));
   padding: clamp(44px, 8vw, 92px) 24px 76px;
@@ -46,7 +52,7 @@ import { CCWaline } from "../waline";
 .tomorrow-letter {
   max-width: 720px;
   margin: 0 auto;
-  animation: tomorrow-page-in 520ms ease-out both;
+  animation: tomorrow-page-in 420ms var(--tomorrow-ease) both;
 }
 
 .tomorrow-letter :deep(h1) {
@@ -58,7 +64,7 @@ import { CCWaline } from "../waline";
   font-weight: 500;
   line-height: 1.04;
   letter-spacing: 0;
-  animation: tomorrow-title-in 680ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: tomorrow-title-in 480ms var(--tomorrow-ease) both;
 }
 
 .tomorrow-letter :deep(p) {
@@ -69,7 +75,7 @@ import { CCWaline } from "../waline";
   line-height: 2.12;
   text-align: left;
   text-wrap: pretty;
-  animation: tomorrow-content-in 620ms ease-out 120ms both;
+  animation: tomorrow-content-in 460ms var(--tomorrow-ease) 80ms both;
 }
 
 .tomorrow-letter :deep(p + p) {
@@ -91,7 +97,7 @@ import { CCWaline } from "../waline";
   margin: clamp(34px, 6vw, 52px) 0;
   border: 0;
   background: var(--vp-c-text-3);
-  animation: tomorrow-rule-in 560ms ease-out 180ms both;
+  animation: tomorrow-rule-in 420ms var(--tomorrow-ease) 120ms both;
 }
 
 .tomorrow-letter :deep(.tomorrow-quote) {
@@ -110,7 +116,7 @@ import { CCWaline } from "../waline";
   width: 2px;
   background: #0f766e;
   transform-origin: top;
-  animation: tomorrow-quote-line-in 520ms ease-out 260ms both;
+  animation: tomorrow-quote-line-in 420ms var(--tomorrow-ease) 80ms both;
   content: "";
 }
 
@@ -125,16 +131,30 @@ import { CCWaline } from "../waline";
 .tomorrow-comments {
   max-width: 720px;
   margin: clamp(56px, 8vw, 84px) auto 0;
-  animation: tomorrow-content-in 620ms ease-out 220ms both;
+  animation: tomorrow-content-in 460ms var(--tomorrow-ease) 140ms both;
+}
+
+.tomorrow-comments-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 18px;
 }
 
 .tomorrow-comments-title {
-  margin: 0 0 18px;
+  margin: 0;
   color: var(--vp-c-text-2);
   font-family: var(--vp-font-family-base);
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0;
+}
+
+.tomorrow-pageviews {
+  color: var(--vp-c-text-3);
+  font-family: var(--vp-font-family-base);
+  font-size: 0.85rem;
 }
 
 @keyframes tomorrow-page-in {
